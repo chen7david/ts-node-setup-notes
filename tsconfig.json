@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "dist", // where to put the compiled JS files
+    "rootDir": "src", // compile scope
+    "target": "ES2020", // which level of JS support to target
+    "module": "CommonJS", // which system for the program AMD, UMD, System, CommonJS
+
+    "noImplicitAny": true,
+    "types": ["node", "jest"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src", "__test__", "test"], // which files to compile
+  "exclude": ["node_modules"], // which files to skip
+  "compileOnSave": true
+}
